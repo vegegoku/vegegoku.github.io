@@ -1,1 +1,0 @@
-$wnd.app.runAsyncCallback2("var bKb='com.google.gwt.user.client.ui';bA(983,1,{});var Hi=$nb(bKb,'UIObject',983);bA(984,983,{228:1});var Ii=$nb(bKb,'Widget',984);bA(985,984,{228:1});var Gi=$nb(bKb,'Composite',985);Xzb(Xb)(2);\n//# sourceMappingURL=static/gwt/extra/app/symbolMaps/922BEB67B2D456DBA2BABFEFABA53E92_sourceMap2.json \n//# sourceURL=app-2.js\n")
