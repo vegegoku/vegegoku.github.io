@@ -11,7 +11,22 @@
 <body>
 
 <script type="text/javascript">
-    document.location.replace('https://dominokit.github.io/domino-ui-demo/index.html');
+	var urlString = window.location.href;
+	var url = new URL(urlString);
+
+	var urlToReplace = 'https://dominokit.github.io/domino-ui-demo/index.html';
+	var params = url.searchParams;	
+	if(params.toString().length > 0){
+		urlToReplace = urlToReplace + '?' + params;
+	}
+	
+	if(urlString.indexOf('#') > 0){
+		var hash = urlString.substring(urlString.indexOf('#')+1);
+		urlToReplace = urlToReplace + '#' + hash;
+	}
+	
+	document.location.replace(urlToReplace);
+   
   </script>
 
 <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
